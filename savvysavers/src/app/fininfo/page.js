@@ -50,7 +50,7 @@ export default function Home() {
       <h1>Your Financial Information</h1>
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="income">Income:</label>
+          <label htmlFor="income">Income: </label>
           <input
             type="number"
             id="income"
@@ -60,7 +60,7 @@ export default function Home() {
           />
         </div>
         <div>
-          <label htmlFor="expenses">Expenses:</label>
+          <label htmlFor="expenses">Expenses: </label>
           <input
             type="number"
             id="expenses"
@@ -70,7 +70,7 @@ export default function Home() {
           />
         </div>
         <div>
-          <label htmlFor="savings">Savings:</label>
+          <label htmlFor="savings">Savings: </label>
           <input
             type="number"
             id="savings"
