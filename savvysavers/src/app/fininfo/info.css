@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #003e5c;
+  }
+  
+  button {
+    padding: 12px;
+    background-color: #003e5c;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #02547e;
+  }
+  
+  p {
+    color: red;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .summary-container {
+    text-align: center;
+  }
+  
+  .summary-container p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .summary-container h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .summary-container div {
+    margin-top: 20px;
+  }
+  
+  .summary-container .no-data {
+    font-size: 1.1rem;
+    color: #888;
+    font-style: italic;
+  }
+  

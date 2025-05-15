@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background-color: transparent;
+    color: white;
+  }
+  
+  .logo {
+    font-family: 'Work Sans', sans-serif;;
+  }
+  
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Work Sans', sans-serif;
+  }
+  
+  a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+  }
+  

@@ -1,4 +1,4 @@
-/* This file contains global styles for the application */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
 
 html,
 body {
@@ -8,9 +8,11 @@ body {
 }
 
 body {
-  background-color: #00364A;
+  background-color: #003e5c;
   color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+  padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
