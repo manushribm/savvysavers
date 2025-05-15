@@ -15,10 +15,10 @@ export default function Home() {
           className={styles.pig}
         />
 
-        {/* Button Grid */}
+        {}
         <div className={styles.ctas}>
-          <a href="#" className={styles.secondary}>
-            EDIT<br/>FINANCIAL<br/>GOALS
+          <a href="/fininfo" className={styles.secondary}>
+             EDIT<br/>FINANCIAL<br/>INFORMATION
           </a>
           <a href="#" className={styles.secondary}>
             DAILY<br/>SPENDING<br/>LIMIT: $
@@ -32,9 +32,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.footer}>
-        {}
-      </div>
+      <footer className={styles.footer} />
     </div>
   );
 }
