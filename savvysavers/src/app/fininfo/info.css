@@ -28,7 +28,7 @@ form {
     align-items: center;
     max-width: 500px; 
     width: 100%;
-    background-color: #fff; 
+    background-color: #a9a9a9; 
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
@@ -38,7 +38,7 @@ form {
 label {
     font-weight: bold;
     font-size: 1rem;
-    color: #fffcfc;
+    color: #ffffff;
     margin-bottom: 10px; 
     letter-spacing: 0.5px;
 }
