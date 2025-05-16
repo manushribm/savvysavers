@@ -1,128 +1,213 @@
+
+
+.body {
+  background-color: #f4f7fb;
+  color: #ffffff;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+.h1 {
+  font-size: 2rem;
+  color: #34495e;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  .connectionStatus {
-    margin: 20px 0;
-    padding: 10px;
-    background-color: #f0f0f0;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .connected {
-    color: green;
-    font-weight: bold;
-  }
-  
-  .display {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #333;
-    border-radius: 10px;
-  }
-  
-  .ledStrip {
-    display: flex;
-    gap: 5px;
-  }
-  
-  .led {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #222;
-  }
-  
-  .led.green {
-    background-color: #00ff00;
-    box-shadow: 0 0 10px #00ff00;
-  }
-  
-  .led.yellow {
-    background-color: #ffff00;
-    box-shadow: 0 0 10px #ffff00;
-  }
-  
-  .led.red {
-    background-color: #ff0000;
-    box-shadow: 0 0 10px #ff0000;
-  }
-  
-  .oledDisplay {
-    background-color: #000;
-    color: #fff;
-    padding: 15px;
-    border-radius: 5px;
-    font-family: monospace;
-    text-align: center;
-    min-width: 200px;
-  }
-  
-  .oledText {
-    font-size: 16px;
-    margin: 5px 0;
-  }
-  
-  .oledAmount {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 10px 0;
-  }
-  
-  .controls {
-    margin: 20px 0;
-  }
-  
-  .budgetControl, .spendControl {
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .input {
-  padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .button {
-    padding: 8px 15px;
-    background-color: #0070f3;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .button:hover {
-    background-color: #005bb5;
-  }
-  
-  .resetButton {
-    background-color: #ff4444;
-    margin-top: 15px;
-  }
-  
-  .resetButton:hover {
-    background-color: #cc0000;
-  }
-  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  background-color:transparent;
+  border-radius: 20px;
+}
+
+.connectionStatus {
+  margin-bottom: 20px;
+}
+
+.connectionStatus button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.connectionStatus button:hover {
+  background-color: #1c6ea4;
+}
+
+.connected {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.ledStrip {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.led {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: #bdc3c7;
+}
+
+.led.green {
+  background-color: #27ae60;
+}
+
+.led.yellow {
+  background-color: #f39c12;
+}
+
+.led.red {
+  background-color: #e74c3c;
+}
+
+.led.off {
+  background-color: #bdc3c7;
+}
+
+.display {
+  margin-bottom: 30px;
+}
+
+.oledDisplay {
+  background-color: #f0f1ff;
+  color: #34495e;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.oledText {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.oledAmount {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 10px 0;
+  color: #2980b9;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.stats .button {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  padding: 15px 30px;
+  margin: 10px;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.stats .button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+.spendControl input {
+  padding: 10px;
+  font-size: 1rem;
+  width: 150px;
+  margin-right: 10px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+
+.spendControl button {
+  padding: 10px 20px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.spendControl button:hover {
+  background-color: #2ecc71;
+}
+
+.resetButton {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.resetButton:hover {
+  background-color: #c0392b;
+}
+
+@media screen and (max-width: 768px) {
   .stats {
-    margin-top: 20px;
-    padding: 15px;
-    background-color: #f8f8f8;
-    border-radius: 5px;
+    flex-direction: column;
   }
-  
-  .stats div {
-    margin: 5px 0;
+
+  .button {
+    font-size: 1rem;
+    padding: 12px 25px;
+    width: 100%;
   }
+
+  .spendControl {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .spendControl input {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .resetButton {
+    width: 100%;
+  }
+}
+.dailyBudgetDisplay {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4CAF50; /* Green color for the budget */
+  margin-top: 10px;
+}

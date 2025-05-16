@@ -1,4 +1,4 @@
-'use client'; // Important for Web Serial API usage
+'use client'; 
 
 import { useState, useEffect } from 'react';
 import styles from './budgettrack.module.css';
@@ -11,12 +11,10 @@ export default function BudgetTracker() {
   const [port, setPort] = useState(null);
   const [ledStates, setLedStates] = useState(Array(10).fill('off'));
 
-  // Update weekly budget when daily changes
   useEffect(() => {
     setWeeklyBudget(dailyBudget * 7);
   }, [dailyBudget]);
 
-  // Calculate LED states based on spending
   useEffect(() => {
     updateLEDStates();
   }, [totalSpent, dailyBudget]);
@@ -45,7 +43,6 @@ export default function BudgetTracker() {
         setPort(newPort);
         setIsConnected(true);
         
-        // Listen for data from Arduino
         const reader = newPort.readable.getReader();
         while (true) {
           const { value, done } = await reader.read();
@@ -79,7 +76,6 @@ export default function BudgetTracker() {
       writer.releaseLock();
     } else {
       console.log('Command (simulated):', command);
-      // Simulate Arduino behavior when not connected
       if (command.startsWith('SPEND:')) {
         const amount = parseFloat(command.substring(6));
         if (amount > 0) {

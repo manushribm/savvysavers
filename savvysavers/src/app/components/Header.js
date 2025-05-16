@@ -16,7 +16,6 @@ const Header = () => {
                 <Link href="/">HOME</Link>
                 <Link href="/fininfo">FINANCIAL INFORMATION</Link>
                 <Link href="/faqs">SAVING + SPENDING TIPS</Link>
-                <Link href="/BudgetTracker">BUDGET TRACKER</Link>
             </div>
         </div>
     );

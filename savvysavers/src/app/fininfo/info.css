@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Work Sans', sans-serif;
-    color: #333;
+    color: #ffffff;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -38,7 +38,7 @@ form {
 label {
     font-weight: bold;
     font-size: 1rem;
-    color: #444;
+    color: #fffcfc;
     margin-bottom: 10px; 
     letter-spacing: 0.5px;
 }
@@ -99,7 +99,7 @@ p {
 
 .summary-container h2 {
     font-size: 2.2rem;
-    color: #333;
+    color: #fffefe;
     margin-bottom: 20px;
 }
 
